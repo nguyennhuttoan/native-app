@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <TextView
+        android:id="@+id/tvPropertyName_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="25dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPropertyAddress_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyName_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyName_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropertyName_Confirm" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="@string/tv_propertyName"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPropertyName_Confirm"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvPropertyName_Confirm" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_propertyAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPropertyAddress_Confirm"
+        app:layout_constraintEnd_toEndOf="@+id/textView5"
+        app:layout_constraintStart_toStartOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="@+id/tvPropertyAddress_Confirm" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_propertyType"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPropertyType_Confirm"
+        app:layout_constraintEnd_toEndOf="@+id/textView6"
+        app:layout_constraintStart_toStartOf="@+id/textView6"
+        app:layout_constraintTop_toTopOf="@+id/tvPropertyType_Confirm" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_propertyBedroom"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_date"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_price"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_furnitureType"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_note"
+        app:layout_constraintEnd_toEndOf="@+id/textView7"
+        app:layout_constraintStart_toStartOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/tv_reporterName"
+        app:layout_constraintEnd_toEndOf="@+id/textView8"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/tvPropertyType_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyAddress_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyAddress_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropertyAddress_Confirm" />
+
+    <TextView
+        android:id="@+id/tvPropertyBedroom_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyType_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyType_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropertyType_Confirm" />
+
+    <TextView
+        android:id="@+id/tvDate_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyBedroom_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyBedroom_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropertyBedroom_Confirm" />
+
+    <TextView
+        android:id="@+id/tvPropertyPrice_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvDate_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/tvDate_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/tvDate_Confirm" />
+
+    <TextView
+        android:id="@+id/tvPropertyFurniture_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyPrice_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyPrice_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropertyPrice_Confirm" />
+
+    <TextView
+        android:id="@+id/tvPropertyNote_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyFurniture_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyFurniture_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropertyFurniture_Confirm" />
+
+    <TextView
+        android:id="@+id/tvPropertyReporter_Confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyNote_Confirm"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyNote_Confirm"
+        app:layout_constraintTop_toBottomOf="@+id/tvPropertyNote_Confirm" />
+</androidx.constraintlayout.widget.ConstraintLayout>

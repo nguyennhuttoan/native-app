@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">My Native App</string>
+    <string name="notification_01">Notification 1</string>
+    <string name="notification_02">Notification 2</string>
+    <string name="notification_03">Notification 3</string>
+    <string name="tv_propertyName">Property Name</string>
+    <string name="tv_propertyAddress">Property Address</string>
+    <string name="tv_propertyType">Property Type</string>
+    <string name="tv_propertyBedroom">Property Bedroom</string>
+    <string name="tv_date">Date</string>
+    <string name="tv_price">Monthly Price</string>
+    <string name="tv_furnitureType">Furniture Type</string>
+    <string name="tv_note">Notes</string>
+    <string name="tv_reporterName">Reporter Name</string>
+    <string name="btn_submit">Submit</string>
+</resources>

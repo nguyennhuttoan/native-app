@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/inputPropertyAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/inputPropertyName"
+        app:layout_constraintStart_toStartOf="@+id/inputPropertyName"
+        app:layout_constraintTop_toBottomOf="@+id/inputPropertyName" />
+
+    <EditText
+        android:id="@+id/inputPropertyType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/inputPropertyAddress"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/inputPropertyAddress"
+        app:layout_constraintTop_toBottomOf="@+id/inputPropertyAddress" />
+
+    <EditText
+        android:id="@+id/inputDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvPropertyName"
+        app:layout_constraintTop_toBottomOf="@+id/inputBedroom" />
+
+    <EditText
+        android:id="@+id/inputPropertyFurnitureType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/inputPropertyPrice"
+        app:layout_constraintStart_toStartOf="@+id/inputPropertyPrice"
+        app:layout_constraintTop_toBottomOf="@+id/inputPropertyPrice" />
+
+    <EditText
+        android:id="@+id/inputPropertyNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/inputPropertyFurnitureType"
+        app:layout_constraintStart_toStartOf="@+id/inputPropertyFurnitureType"
+        app:layout_constraintTop_toBottomOf="@+id/inputPropertyFurnitureType" />
+
+    <EditText
+        android:id="@+id/inputPropertyReporter"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/inputPropertyNote"
+        app:layout_constraintStart_toStartOf="@+id/inputPropertyNote"
+        app:layout_constraintTop_toBottomOf="@+id/inputPropertyNote" />
+
+    <EditText
+        android:id="@+id/inputPropertyName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvPropertyName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_submit"
+        app:layout_constraintEnd_toEndOf="@+id/inputPropertyReporter"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvReporterName"
+        app:layout_constraintTop_toBottomOf="@+id/inputPropertyReporter" />
+
+    <TextView
+        android:id="@+id/tvPropertyName"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/tv_propertyName"
+        app:layout_constraintBottom_toBottomOf="@+id/inputPropertyName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/inputPropertyName"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/tvError"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/inputPropertyName"
+        app:layout_constraintEnd_toEndOf="@+id/inputPropertyName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyName" />
+
+    <TextView
+        android:id="@+id/tvPropertyAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_propertyAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/inputPropertyAddress"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyName"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyName"
+        app:layout_constraintTop_toTopOf="@+id/inputPropertyAddress" />
+
+    <TextView
+        android:id="@+id/tvPropertyType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_propertyType"
+        app:layout_constraintBottom_toBottomOf="@+id/inputPropertyType"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyAddress"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyAddress"
+        app:layout_constraintTop_toTopOf="@+id/inputPropertyType" />
+
+    <TextView
+        android:id="@+id/tvBedroom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_propertyBedroom"
+        app:layout_constraintBottom_toBottomOf="@+id/inputBedroom"
+        app:layout_constraintEnd_toEndOf="@+id/tvPropertyType"
+        app:layout_constraintHorizontal_bias="0.411"
+        app:layout_constraintStart_toStartOf="@+id/tvPropertyType"
+        app:layout_constraintTop_toTopOf="@+id/inputBedroom" />
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_date"
+        app:layout_constraintBottom_toBottomOf="@+id/inputDate"
+        app:layout_constraintEnd_toEndOf="@+id/tvBedroom"
+        app:layout_constraintStart_toStartOf="@+id/tvBedroom"
+        app:layout_constraintTop_toTopOf="@+id/inputDate" />
+
+    <TextView
+        android:id="@+id/tvMonthlyPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_price"
+        app:layout_constraintBottom_toBottomOf="@+id/inputPropertyPrice"
+        app:layout_constraintEnd_toEndOf="@+id/tvDate"
+        app:layout_constraintStart_toStartOf="@+id/tvDate"
+        app:layout_constraintTop_toTopOf="@+id/inputPropertyPrice" />
+
+    <TextView
+        android:id="@+id/tvFurnitureType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_furnitureType"
+        app:layout_constraintBottom_toBottomOf="@+id/inputPropertyFurnitureType"
+        app:layout_constraintEnd_toEndOf="@+id/tvMonthlyPrice"
+        app:layout_constraintStart_toStartOf="@+id/tvMonthlyPrice"
+        app:layout_constraintTop_toTopOf="@+id/inputPropertyFurnitureType"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <TextView
+        android:id="@+id/tvNote"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_note"
+        app:layout_constraintBottom_toBottomOf="@+id/inputPropertyNote"
+        app:layout_constraintEnd_toEndOf="@+id/tvFurnitureType"
+        app:layout_constraintStart_toStartOf="@+id/tvFurnitureType"
+        app:layout_constraintTop_toTopOf="@+id/inputPropertyNote" />
+
+    <TextView
+        android:id="@+id/tvReporterName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_reporterName"
+        app:layout_constraintBottom_toBottomOf="@+id/inputPropertyReporter"
+        app:layout_constraintEnd_toEndOf="@+id/tvNote"
+        app:layout_constraintStart_toStartOf="@+id/tvNote"
+        app:layout_constraintTop_toTopOf="@+id/inputPropertyReporter" />
+
+    <EditText
+        android:id="@+id/inputBedroom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/inputPropertyType"
+        app:layout_constraintStart_toStartOf="@+id/inputPropertyType"
+        app:layout_constraintTop_toBottomOf="@+id/inputPropertyType" />
+
+    <EditText
+        android:id="@+id/inputPropertyPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/inputDate"
+        app:layout_constraintStart_toStartOf="@+id/inputDate"
+        app:layout_constraintTop_toBottomOf="@+id/inputDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
